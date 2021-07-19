@@ -12,7 +12,7 @@ def calculator():
     y = int(input("Enter number:"))
 
     # define methods
-    methods = {
+    method_type = {
         "add": x + y,
         "multiply": x * y,
         "divide": x / y,
@@ -20,8 +20,8 @@ def calculator():
     }
 
     # What to do with chosen method key:value
-    if (method in methods):
-        return methods[method]
+    if (method in method_type):
+        print(method_type[method])
     else:
         return print("Error")
 
