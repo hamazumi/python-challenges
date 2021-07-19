@@ -11,6 +11,7 @@ def calculator():
     x = int(input("Enter number:"))
     y = int(input("Enter number:"))
 
+    # define methods
     methods = {
         "add": x + y,
         "multiply": x * y,
@@ -18,6 +19,7 @@ def calculator():
         "subtract": x - y,
     }
 
+    # What to do with chosen method key:value
     if (method in methods):
         return methods[method]
     else:
